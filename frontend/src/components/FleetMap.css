@@ -1,0 +1,79 @@
+.map-wrapper {
+  flex: 1;
+  position: relative;
+  height: 100vh;
+}
+
+.leaflet-map {
+  width: 100%;
+  height: 100%;
+  background: #1a1a2e;
+}
+
+/* Popup */
+.popup {
+  min-width: 180px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 13px;
+}
+.popup-title {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #111;
+}
+.popup-row {
+  margin-bottom: 4px;
+  color: #333;
+}
+.popup-status {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+.popup-status.moving { color: #16a34a; background: #dcfce7; }
+.popup-status.idle { color: #a16207; background: #fef9c3; }
+.popup-status.offline { color: #dc2626; background: #fee2e2; }
+.popup-address {
+  font-size: 11px;
+  color: #666;
+}
+.popup-time {
+  font-size: 11px;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* Legend */
+.map-legend {
+  position: absolute;
+  bottom: 30px;
+  right: 12px;
+  background: rgba(15, 15, 26, 0.88);
+  border: 1px solid #2a2a40;
+  border-radius: 8px;
+  padding: 10px 14px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  backdrop-filter: blur(6px);
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: #ccc;
+}
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.legend-dot.moving { background: #22c55e; }
+.legend-dot.idle { background: #eab308; }
+.legend-dot.offline { background: #ef4444; }

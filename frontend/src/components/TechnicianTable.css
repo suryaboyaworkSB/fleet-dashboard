@@ -1,0 +1,88 @@
+.tech-table-card { }
+
+.tech-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.export-btn {
+  padding: 7px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 0.8rem;
+  color: #475569;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.export-btn:hover { background: #f8fafc; }
+
+.table-wrap { overflow-x: auto; }
+.table-empty { color: #94a3b8; font-size: 0.85rem; padding: 24px 0; text-align: center; }
+
+.tech-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.tech-table th {
+  text-align: left;
+  padding: 10px 14px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #64748b;
+  border-bottom: 2px solid #f1f5f9;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+.tech-table th:hover { color: #0f172a; }
+.tech-table th.sorted { color: #3b82f6; }
+
+.tech-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #f8fafc;
+  color: #334155;
+}
+.tech-table tr:last-child td { border-bottom: none; }
+.tech-table tr:hover td { background: #f8fafc; }
+
+.td-name { font-weight: 600; color: #0f172a; }
+
+.alert-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: #f1f5f9;
+  color: #64748b;
+}
+.alert-badge.has-alert { background: #fef3c7; color: #92400e; }
+
+.status-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.status-badge.moving { background: #dcfce7; color: #166534; }
+.status-badge.idle   { background: #fef9c3; color: #854d0e; }
+.status-badge.offline{ background: #fee2e2; color: #991b1b; }
+
+.util-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+.util-badge.high   { background: #ede9fe; color: #5b21b6; }
+.util-badge.medium { background: #dbeafe; color: #1e40af; }
+.util-badge.low    { background: #f1f5f9; color: #475569; }

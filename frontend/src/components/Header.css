@@ -1,0 +1,97 @@
+.otm-header {
+  background: #0f172a;
+  color: #fff;
+  padding: 0;
+}
+
+.header-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 28px 32px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header-org {
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin-bottom: 6px;
+}
+
+.header-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.header-desc {
+  font-size: 0.82rem;
+  color: #94a3b8;
+  max-width: 460px;
+  line-height: 1.5;
+}
+
+.header-filters {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.filter-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.filter-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.filter-select {
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #e2e8f0;
+  border-radius: 6px;
+  padding: 7px 12px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  min-width: 110px;
+  outline: none;
+}
+
+.filter-select:focus { border-color: #3b82f6; }
+
+.header-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 8px 32px;
+  background: #0d1424;
+  border-top: 1px solid #1e293b;
+  max-width: 100%;
+}
+
+.status-pill {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+.status-pill.live { color: #22c55e; background: rgba(34,197,94,0.12); animation: blink 2s infinite; }
+.status-pill.error { color: #f97316; background: rgba(249,115,22,0.12); }
+
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.5} }
+
+.last-updated { font-size: 0.72rem; color: #475569; }
